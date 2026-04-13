@@ -1,0 +1,100 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "input",
+				"type": "uint256"
+			}
+		],
+		"name": "overflowlocalonly",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "count",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "input",
+				"type": "uint256"
+			}
+		],
+		"name": "underflowtostate",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "input",
+				"type": "uint256"
+			}
+		],
+		"name": "overflowmultostate",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "input",
+				"type": "uint256"
+			}
+		],
+		"name": "underflowlocalonly",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "input",
+				"type": "uint256"
+			}
+		],
+		"name": "overflowaddtostate",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "input",
+				"type": "uint256"
+			}
+		],
+		"name": "overflowmulocalonly",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]

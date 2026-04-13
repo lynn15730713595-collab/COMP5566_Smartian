@@ -1,0 +1,21 @@
+tool,type,contract,tp,fp,fn,time_s,executions,test_cases,covered_edges,covered_instructions,found_bugs,note
+smartian,T1_Reentrancy,etherstore.sol,1,0,0,60,85119,7,32,460,Reentrancy:2;Block state Dependency:1,
+smartian,T1_Reentrancy,modifier_reentrancy.sol,0,0,1,60,130157,2,15,207,,No reentrancy detected (ModifierEntrancy)
+smartian,T1_Reentrancy,reentrancy_cross_function.sol,1,0,0,60,93443,5,19,315,Reentrancy:1,
+smartian,T1_Reentrancy,reentrancy_dao.sol,1,0,0,60,114699,4,14,204,Reentrancy:1;Ether Leak:1;Integer Bug:1,
+smartian,T1_Reentrancy,reentrancy_insecure.sol,1,0,0,60,118743,3,12,174,Reentrancy:1,
+smartian,T2_Arithmetic,BECToken.sol,1,1,0,60,42951,29,177,2641,Integer Bug:1;Assertion Failure:1,Detected Integer Bug (tp) and Assertion Failure (fp)
+smartian,T2_Arithmetic,integer_overflow_1.sol,1,0,0,60,182346,1,5,93,Integer Bug:1,
+smartian,T2_Arithmetic,integer_overflow_mul.sol,1,0,0,60,184125,2,11,122,Integer Bug:1,
+smartian,T2_Arithmetic,integer_overflow_multitx_multifunc_feasible.sol,1,0,0,60,165207,3,19,159,Integer Bug:1,
+smartian,T2_Arithmetic,overflow_single_tx.sol,1,0,0,60,149535,7,36,378,Integer Bug:3,
+smartian,T3_AccessControl,parity_wallet_bug_1.sol,0,1,1,60,147467,11,51,663,Assertion Failure:1;Mishandled Exception:1,Did not detect access control vulnerability
+smartian,T3_AccessControl,parity_wallet_bug_2.sol,0,0,0,0,0,0,0,0,,Compilation failed - unable to detect
+smartian,T3_AccessControl,phishable.sol,1,0,0,60,199134,5,16,233,Transaction Origin Use:1,
+smartian,T3_AccessControl,rubixi.sol,0,1,1,60,92121,24,130,1295,Assertion Failure:2,Assertion Failure is fp, did not detect access control issue
+smartian,T3_AccessControl,unprotected0.sol,0,0,1,60,207358,1,6,99,,No bugs detected
+smartian,T4_UncheckedCalls,etherpot_lotto.sol,1,1,0,60,83321,16,115,1661,Mishandled Exception:1;Assertion Failure:2,Mishandled Exception (tp), Assertion Failure (fp)
+smartian,T4_UncheckedCalls,king_of_the_ether_throne.sol,1,1,0,60,78020,9,62,952,Mishandled Exception:2;Assertion Failure:1,Mishandled Exception (tp), Assertion Failure (fp)
+smartian,T4_UncheckedCalls,lotto.sol,1,0,0,60,146315,6,30,358,Mishandled Exception:2,
+smartian,T4_UncheckedCalls,mishandled.sol,1,0,0,60,83679,1,6,119,Mishandled Exception:1,
+smartian,T4_UncheckedCalls,unchecked_return_value.sol,1,0,0,60,160648,3,14,162,Mishandled Exception:1,

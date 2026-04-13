@@ -1,0 +1,261 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"object": "60606040523415600b57fe5b5b60338060196000396000f30060606040525bfe00a165627a7a72305820d1fcf6bbd540a291891237b616ba033aacce2feb2433c49b4030cea3bab8b1fc0029",
+			"opcodes": "PUSH1 0x60 PUSH1 0x40 MSTORE CALLVALUE ISZERO PUSH1 0xB JUMPI INVALID JUMPDEST JUMPDEST PUSH1 0x33 DUP1 PUSH1 0x19 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN STOP PUSH1 0x60 PUSH1 0x40 MSTORE JUMPDEST INVALID STOP LOG1 PUSH6 0x627A7A723058 SHA3 0xd1 0xfc 0xf6 0xbb 0xd5 BLOCKHASH LOG2 SWAP2 DUP10 SLT CALLDATACOPY 0xb6 AND 0xba SUB GASPRICE 0xac 0xce 0x2f 0xeb 0x24 CALLER 0xc4 SWAP12 BLOCKHASH ADDRESS 0xce LOG3 0xba 0xb8 0xb1 0xfc STOP 0x29 ",
+			"sourceMap": "741:1327:0:-;;;;;;;;;;;;;;;;",
+			"linkReferences": {}
+		},
+		"deployedBytecode": {
+			"object": "60606040525bfe00a165627a7a72305820d1fcf6bbd540a291891237b616ba033aacce2feb2433c49b4030cea3bab8b1fc0029",
+			"sourceMap": "741:1327:0:-;;;;",
+			"linkReferences": {}
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "10200",
+				"executionCost": "62"
+			},
+			"internal": {},
+			"external": {}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": [
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"name": "owner",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"name": "operation",
+					"type": "bytes32"
+				}
+			],
+			"name": "Confirmation",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"name": "owner",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"name": "operation",
+					"type": "bytes32"
+				}
+			],
+			"name": "Revoke",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"name": "oldOwner",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"name": "newOwner",
+					"type": "address"
+				}
+			],
+			"name": "OwnerChanged",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"name": "newOwner",
+					"type": "address"
+				}
+			],
+			"name": "OwnerAdded",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"name": "oldOwner",
+					"type": "address"
+				}
+			],
+			"name": "OwnerRemoved",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"name": "newRequirement",
+					"type": "uint256"
+				}
+			],
+			"name": "RequirementChanged",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"name": "_from",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"name": "value",
+					"type": "uint256"
+				}
+			],
+			"name": "Deposit",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"name": "owner",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"name": "value",
+					"type": "uint256"
+				},
+				{
+					"indexed": false,
+					"name": "to",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"name": "data",
+					"type": "bytes"
+				},
+				{
+					"indexed": false,
+					"name": "created",
+					"type": "address"
+				}
+			],
+			"name": "SingleTransact",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"name": "owner",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"name": "operation",
+					"type": "bytes32"
+				},
+				{
+					"indexed": false,
+					"name": "value",
+					"type": "uint256"
+				},
+				{
+					"indexed": false,
+					"name": "to",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"name": "data",
+					"type": "bytes"
+				},
+				{
+					"indexed": false,
+					"name": "created",
+					"type": "address"
+				}
+			],
+			"name": "MultiTransact",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"name": "operation",
+					"type": "bytes32"
+				},
+				{
+					"indexed": false,
+					"name": "initiator",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"name": "value",
+					"type": "uint256"
+				},
+				{
+					"indexed": false,
+					"name": "to",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"name": "data",
+					"type": "bytes"
+				}
+			],
+			"name": "ConfirmationNeeded",
+			"type": "event"
+		}
+	]
+}
